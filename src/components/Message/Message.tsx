@@ -7,7 +7,7 @@ import { useSearchParams } from 'next/navigation'
 export default function Message() {
 
   const searchParams = useSearchParams()
-  const message = searchParams.get("m")
+  const message = searchParams?.get("m")
 
   return (
     <h2 className={styles.message}>

@@ -18,7 +18,7 @@ export default function Guid() {
           https://moyotsukai.dev/newyearscard?m=今年もよろしく！
         </li>
         <li className={styles.listItem}>
-          "_"(アンダーバー)で改行できます。
+          &quot;_&quot;(アンダーバー)で改行できます。
         </li>
       </ul>
     </div>
