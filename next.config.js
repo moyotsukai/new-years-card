@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+
+const nextConfig = {
+  assetPrefix: "/newyearscard",
+  basePath: "/newyearscard"
+}
 
 module.exports = nextConfig
