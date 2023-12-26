@@ -1,0 +1,10 @@
+.link {
+  font-size: 14px;
+  color: #595959;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.link:hover {
+  color: #3363ff;
+}

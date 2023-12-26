@@ -1,0 +1,19 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 28px;
+  padding-bottom: 40px;
+}
+
+.listContainer {
+  padding: 0 12px;
+  list-style-type: circle;
+  line-height: 1.6;
+}
+
+.listItem {
+  padding: 14px 0;
+}
