@@ -15,7 +15,7 @@ export default function Guid() {
           <br /><br />
           例)
           <br />
-          https://moyotsukai.dev/newyearcard?m=今年もよろしく！
+          https://moyotsukai.dev/newyearscard?m=今年もよろしく！
         </li>
         <li className={styles.listItem}>
           "_"(アンダーバー)で改行できます。
