@@ -1,8 +1,18 @@
+'use client'
+
 import CopyButton from '@/components/CopyButton'
 import styles from './styles.module.css'
 import LinkInText from '@/components/LinkInText'
+import React, { useState } from 'react'
 
 export default function Guid() {
+  const [message, setMessage] = useState<string>("")
+  const encodedMessage = encodeURI(message).replace("%0A", "_")
+
+  const onChangeMessage = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setMessage(e.target.value)
+  }
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
@@ -11,32 +21,44 @@ export default function Guid() {
       <ul className={styles.listContainer}>
         <li className={styles.listItem}>
           URLを送信して年賀状を送りましょう！
+        </li>
+        <li className={styles.listItem}>
+          メッセージに含まれる絵文字によって背景のデザインが変化します。
           <br />
-          例)
+          ・該当なし→スタイル1
           <br />
-          <LinkInText href="https://newyearscard.moyotsukai.dev/?m=今年もよろしく！😄">
-            https://newyearscard.moyotsukai.dev/?m=今年もよろしく！😄
-          </LinkInText>
-          <div>
-            <CopyButton text="https://newyearscard.moyotsukai.dev/?m=今年もよろしく%F0%9F%98%84" />
+          ・🤗→スタイル2
+          <br />
+          ・🥰→スタイル3
+          <br />
+          ・😄→スタイル4
+        </li>
+      </ul>
+
+      <ul className={styles.guideContainer}>
+        <li className={styles.listItem}>
+          <p className={styles.text}>
+            メッセージを入力しましょう！
+          </p>
+          <textarea
+            value={message}
+            placeholder="メッセージを入力"
+            onChange={onChangeMessage}
+            className={styles.textarea}
+          />
+        </li>
+        <li className={styles.listItem}>
+          <p className={styles.text}>
+            URLをコピーして送信しましょう！
+          </p>
+          <div className={styles.text}>
+            <LinkInText href={`https://newyearscard.moyotsukai.dev/?m=${encodedMessage}`}>
+              {`https://newyearscard.moyotsukai.dev/?m=${encodedMessage}`}
+            </LinkInText>
           </div>
-        </li>
-        <li className={styles.listItem}>
-          URL末尾の文字列を変えることでメッセージを自由に変更できます。
-        </li>
-        <li className={styles.listItem}>
-          &quot;_&quot;(アンダーバー)で改行できます。
-        </li>
-        <li className={styles.listItem}>
-          メッセージに含まれる絵文字によって背景が変化します。
-          <br />
-          該当なし→スタイル1
-          <br />
-          🤗→スタイル2
-          <br />
-          🥰→スタイル3
-          <br />
-          😄→スタイル4
+          <div className={styles.text}>
+            <CopyButton text={`https://newyearscard.moyotsukai.dev/?m=${encodedMessage}`} />
+          </div>
         </li>
       </ul>
     </div>

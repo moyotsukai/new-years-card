@@ -1,19 +1,49 @@
 .container {
   max-width: 600px;
   margin: 0 auto;
+  font-size: 16px;
 }
 
 .title {
   font-size: 28px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .listContainer {
   padding: 0 12px;
   list-style-type: circle;
   line-height: 2;
+  margin-left: 6px;
 }
 
 .listItem {
   margin: 14px 0;
+}
+
+.guideContainer {
+  list-style-type: decimal;
+  padding: 0 12px;
+  margin-left: 6px;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 80px;
+  margin: 6px 0;
+  resize: vertical;
+  font-size: 16px;
+  padding: 5px;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: solid 1.5px #b8c2e6;
+  border-radius: 6px;
+}
+
+.textarea:focus {
+  border: solid 1.5px #3363ff;
+  outline: none;
+}
+
+.text {
+  padding: 8px 0;
 }
