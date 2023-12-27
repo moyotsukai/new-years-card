@@ -5,7 +5,7 @@ export default function LinkInText({
   href,
   children
 }: {
-  href: "/" | "/guid",
+  href: string,
   children: React.ReactNode
 }) {
   return (

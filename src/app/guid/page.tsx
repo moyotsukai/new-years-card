@@ -1,5 +1,6 @@
 import CopyButton from '@/components/CopyButton'
 import styles from './styles.module.css'
+import LinkInText from '@/components/LinkInText'
 
 export default function Guid() {
   return (
@@ -13,9 +14,11 @@ export default function Guid() {
           <br />
           例)
           <br />
-          newyearscard.moyotsukai.dev/?m=今年もよろしく！🤗
+          <LinkInText href="https://newyearscard.moyotsukai.dev/?m=今年もよろしく！😄">
+            newyearscard.moyotsukai.dev/?m=今年もよろしく！😄
+          </LinkInText>
           <div>
-            <CopyButton text="newyearscard.moyotsukai.dev/?m=今年もよろしく！🤗" />
+            <CopyButton text="newyearscard.moyotsukai.dev/?m=今年もよろしく！😄" />
           </div>
         </li>
         <li className={styles.listItem}>
