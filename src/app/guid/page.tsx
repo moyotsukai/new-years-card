@@ -15,10 +15,10 @@ export default function Guid() {
           例)
           <br />
           <LinkInText href="https://newyearscard.moyotsukai.dev/?m=今年もよろしく！😄">
-            newyearscard.moyotsukai.dev/?m=今年もよろしく！😄
+            https://newyearscard.moyotsukai.dev/?m=今年もよろしく！😄
           </LinkInText>
           <div>
-            <CopyButton text="newyearscard.moyotsukai.dev/?m=今年もよろしく！😄" />
+            <CopyButton text="https://newyearscard.moyotsukai.dev/?m=%E4%BB%8A%E5%B9%B4%E3%82%82%E3%82%88%E3%82%8D%E3%81%97%E3%81%8F%EF%BC%81%F0%9F%98%84" />
           </div>
         </li>
         <li className={styles.listItem}>
