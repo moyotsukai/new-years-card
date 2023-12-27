@@ -18,23 +18,6 @@ export default function Guid() {
       <h1 className={styles.title}>
         使い方
       </h1>
-      <ul className={styles.listContainer}>
-        <li className={styles.listItem}>
-          URLを送信して年賀状を送りましょう！
-        </li>
-        <li className={styles.listItem}>
-          メッセージに含まれる絵文字によって背景のデザインが変化します。
-          <br />
-          ・該当なし→スタイル1
-          <br />
-          ・🤗→スタイル2
-          <br />
-          ・🥰→スタイル3
-          <br />
-          ・😄→スタイル4
-        </li>
-      </ul>
-
       <ul className={styles.guideContainer}>
         <li className={styles.listItem}>
           <p className={styles.text}>
@@ -49,7 +32,7 @@ export default function Guid() {
         </li>
         <li className={styles.listItem}>
           <p className={styles.text}>
-            URLをコピーして送信しましょう！
+            URLをコピーして年賀状を送信しましょう！
           </p>
           <div className={styles.text}>
             <LinkInText href={`https://newyearscard.moyotsukai.dev/?m=${encodedMessage}`}>
@@ -59,6 +42,19 @@ export default function Guid() {
           <div className={styles.text}>
             <CopyButton text={`https://newyearscard.moyotsukai.dev/?m=${encodedMessage}`} />
           </div>
+        </li>
+      </ul>
+      <ul className={styles.listContainer}>
+        <li className={styles.listItem}>
+          メッセージに含まれる絵文字によって背景のデザインが変化します。
+          <br />
+          ・該当なし→スタイル1
+          <br />
+          ・🤗→スタイル2
+          <br />
+          ・🥰→スタイル3
+          <br />
+          ・😄→スタイル4
         </li>
       </ul>
     </div>
