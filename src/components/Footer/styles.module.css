@@ -1,9 +1,7 @@
 .footer {
-  padding: 6px 0;
-  background-color: #fff;
   text-align: center;
   font-size: 10pt;
-  color: #999;
+  color: #333;
 }
 
 .link {
@@ -11,6 +9,7 @@
 }
 
 .copy {
-  background-color: #fafafa;
   padding: 4px 0;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  color: #777;
 }

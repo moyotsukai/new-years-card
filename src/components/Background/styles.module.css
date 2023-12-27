@@ -1,0 +1,65 @@
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -100;
+}
+
+.style1 {
+  background: linear-gradient(180deg,
+      #6e86ff,
+      #6e86ff,
+      #fad370,
+      #fad370,
+      #adc7ff,
+      #adc7ff,
+      #6e86ff);
+  background-size: 100% 500%;
+  animation: gradietionAnimation 100s linear 1s infinite;
+}
+
+@keyframes gradietionAnimation {
+  0% {
+    background-position: 0% 0%
+  }
+
+  100% {
+    background-position: 0% 500%
+  }
+}
+
+.style2 {
+  background-color: #fff;
+  background-image:
+    radial-gradient(#ffd9e9 20%, transparent 20%),
+    radial-gradient(#ffd9e9 20%, transparent 20%);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+}
+
+.style3 {
+  background: radial-gradient(circle,
+      transparent 10%,
+      #c4ebff 10%,
+      #c4ebff 90%,
+      transparent 90%,
+      transparent),
+    radial-gradient(circle,
+      transparent 20%,
+      #c4ebff 20%,
+      #c4ebff 80%,
+      transparent 80%,
+      transparent) 40px 40px,
+    linear-gradient(#babbff 3.2px, transparent 3.2px) 0 -1.6px,
+    linear-gradient(90deg, #babbff 3.2px, #c4ebff 3.2px) -1.6px 0;
+  background-size: 80px 80px, 80px 80px, 40px 40px, 40px 40px;
+}
+
+.style4 {
+  background-color: #fff4ba;
+  background-image: linear-gradient(90deg, rgba(255, 136, 56, 0.2) 50%, transparent 50%),
+    linear-gradient(rgba(255, 136, 56, 0.2) 50%, transparent 50%);
+  background-size: 40px 40px;
+}

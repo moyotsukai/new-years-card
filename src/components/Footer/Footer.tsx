@@ -9,7 +9,6 @@ export default function Footer() {
           年賀状を送る
         </LinkInText>
       </div>
-
       <div className={styles.copy}>
         &copy; 2023 Shintaro Aoi
       </div>
