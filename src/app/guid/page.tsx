@@ -18,7 +18,7 @@ export default function Guid() {
             https://newyearscard.moyotsukai.dev/?m=今年もよろしく！😄
           </LinkInText>
           <div>
-            <CopyButton text="https://newyearscard.moyotsukai.dev/?m=%今年もよろしく%F0%9F%98%84" />
+            <CopyButton text="https://newyearscard.moyotsukai.dev/?m=今年もよろしく%F0%9F%98%84" />
           </div>
         </li>
         <li className={styles.listItem}>
