@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 import LinkInText from '@/components/LinkInText'
 import React, { useState } from 'react'
 
-export default function Guid() {
+export default function Guide() {
   const [message, setMessage] = useState<string>("")
   const encodedMessage = encodeURI(message).replace("%0A", "_")
 

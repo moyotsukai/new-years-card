@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.link}>
-        <LinkInText href="/guid">
+        <LinkInText href="/guide">
           年賀状を送る
         </LinkInText>
       </div>
