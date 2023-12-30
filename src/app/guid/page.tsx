@@ -16,7 +16,7 @@ export default function Guid() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        使い方
+        URLで年賀状を送ろう！
       </h1>
       <ul className={styles.guideContainer}>
         <li className={styles.listItem}>
@@ -44,6 +44,7 @@ export default function Guid() {
           </div>
         </li>
       </ul>
+      <div className={styles.divider} />
       <ul className={styles.listContainer}>
         <li className={styles.listItem}>
           メッセージに含まれる絵文字によって背景のデザインが変化します。
@@ -55,6 +56,30 @@ export default function Guid() {
           ・🥰→スタイル3
           <br />
           ・😄→スタイル4
+        </li>
+        <li className={styles.listItem}>
+          例）
+          <br />
+          <p className={styles.text}>
+            <LinkInText href={`https://newyearscard.moyotsukai.dev/?m=${"あけましておめでとう！"}`}>
+              {`https://newyearscard.moyotsukai.dev/?m=${"あけましておめでとう！"}`}
+            </LinkInText>
+          </p>
+          <p className={styles.text}>
+            <LinkInText href={`https://newyearscard.moyotsukai.dev/?m=${"今年もよろしく🤗"}`}>
+              {`https://newyearscard.moyotsukai.dev/?m=${"今年もよろしく🤗"}`}
+            </LinkInText>
+          </p>
+          <p className={styles.text}>
+            <LinkInText href={`https://newyearscard.moyotsukai.dev/?m=${"今年もよろしくね🥰"}`}>
+              {`https://newyearscard.moyotsukai.dev/?m=${"今年もよろしくね🥰"}`}
+            </LinkInText>
+          </p>
+          <p className={styles.text}>
+            <LinkInText href={`https://newyearscard.moyotsukai.dev/?m=${"今年もよろしくお願いいたします😄"}`}>
+              {`https://newyearscard.moyotsukai.dev/?m=${"今年もよろしくお願いいたします😄"}`}
+            </LinkInText>
+          </p>
         </li>
       </ul>
     </div>
